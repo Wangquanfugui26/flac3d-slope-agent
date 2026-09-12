@@ -1,0 +1,41 @@
+# 大文件与运行产物（不入库）
+*.sav.bak
+*.run.dat
+*.run
+*.tmp
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# 原始 stdout 日志（含海量 cycling 表，体积达 100+ MB，仅保留 curated 子集）
+raw_logs/
+_validate2_main.log
+v2_*.txt
+v3_*.txt
+v4_*.txt
+fix_*.txt
+snap_*.txt
+probe_*.txt
+loose_p_loose_c10p15_l_*.txt
+
+# 调试中间产物
+_batch_*.txt
+_export_*.txt
+_s3_screen.txt
+_test_s1.txt
+_cf.log
+_validate3.log
+
+# FLAC3D 软件本体（专有软件，严禁入库）
+FLAC/
+exe64/
+addon.py
+modelhbblast.zip
+constitutive/
+网格转换/
+project/
+
+# 系统文件
+Thumbs.db
+desktop.ini
+.DS_Store

@@ -1,0 +1,97 @@
+**********************************************
+* Logging started at 周五 9月 11 21:33:18 2026
+* By flac3d Version 7.00 Release 126
+* 
+* 
+* Job Title: Parametric slope case t60
+**********************************************
+flac3d>model factor-of-safety bracket 0.8 3.0 filename "D:/Flac3d/FLAC/exe64/cases/p_t60_fos" ratio-local 1e-5
+--- The following model elements and properties are INCLUDED in factor of safety scaling:
+    zone: cohesion friction joint-cohesion joint-friction
+Factor of Safety Calculation Starting At: 周五 9月 11 21:33:18 2026
+--- Characteristic number of steps = 43551.
++++ Model is unstable at maximum specified Factor of Safety 0.8.
+flac3d>model factor-of-safety list
+Factor of Safety Not Valid
+flac3d>program log off
+**********************************************
+* Logging ended at 周五 9月 11 21:40:29 2026
+**********************************************
+**********************************************
+* Logging started at 周五 9月 11 21:52:02 2026
+* By flac3d Version 7.00 Release 126
+* 
+* 
+* Job Title: Parametric slope case t60
+**********************************************
+flac3d>model factor-of-safety bracket 0.3 3 filename "D:/Flac3d/FLAC/exe64/cases/p_t60_fos" ratio-local 1e-5
+--- The following model elements and properties are INCLUDED in factor of safety scaling:
+    zone: cohesion friction joint-cohesion joint-friction
+Factor of Safety Calculation Starting At: 周五 9月 11 21:52:02 2026
+--- Characteristic number of steps = 43551.
++++ Model is unstable at maximum specified Factor of Safety 0.3.
+flac3d>model factor-of-safety list
+Factor of Safety Not Valid
+flac3d>program log off
+**********************************************
+* Logging ended at 周五 9月 11 21:54:52 2026
+**********************************************
+**********************************************
+* Logging started at 周五 9月 11 21:56:06 2026
+* By flac3d Version 7.00 Release 126
+* 
+* 
+* Job Title: Parametric slope case t60
+**********************************************
+flac3d>model factor-of-safety bracket 0.05 0.4 filename "D:/Flac3d/FLAC/exe64/cases/p_t60_fos" ratio-local 1e-5
+--- The following model elements and properties are INCLUDED in factor of safety scaling:
+    zone: cohesion friction joint-cohesion joint-friction
+Factor of Safety Calculation Starting At: 周五 9月 11 21:56:06 2026
+--- Characteristic number of steps = 43551.
++++ Model is unstable at maximum specified Factor of Safety 0.05.
+flac3d>model factor-of-safety list
+Factor of Safety Not Valid
+flac3d>program log off
+**********************************************
+* Logging ended at 周五 9月 11 21:58:30 2026
+**********************************************
+**********************************************
+* Logging started at 周五 9月 11 22:09:53 2026
+* By flac3d Version 7.00 Release 126
+* 
+* 
+* Job Title: Parametric slope case t60
+**********************************************
+flac3d>model factor-of-safety bracket 0.3 3 filename "D:/Flac3d/FLAC/exe64/cases/p_t60_fos" ratio-local 1e-5
+--- The following model elements and properties are INCLUDED in factor of safety scaling:
+    zone: cohesion friction joint-cohesion joint-friction
+Factor of Safety Calculation Starting At: 周五 9月 11 22:09:53 2026
+--- Characteristic number of steps = 43623.
++++ Model is unstable at maximum specified Factor of Safety 0.3.
+flac3d>model factor-of-safety list
+Factor of Safety Not Valid
+flac3d>program log off
+**********************************************
+* Logging ended at 周五 9月 11 22:12:10 2026
+**********************************************
+**********************************************
+* Logging started at 周五 9月 11 22:22:17 2026
+* By flac3d Version 7.00 Release 126
+* 
+* 
+* Job Title: Parametric slope case t60
+**********************************************
+flac3d>model factor-of-safety bracket 0.3 3 filename "D:/Flac3d/FLAC/exe64/cases/p_t60_fos" ratio-local 1e-5
+--- The following model elements and properties are INCLUDED in factor of safety scaling:
+    zone: cohesion friction joint-cohesion joint-friction
+Factor of Safety Calculation Starting At: 周五 9月 11 22:22:17 2026
+--- Characteristic number of steps = 5149.
+--- Factor of Safety is : 1.32
+--- To see failure mode restore D:/Flac3d/FLAC/exe64/cases/p_t60_fos-Unstable.sav
+--- To see closest stable state restore D:/Flac3d/FLAC/exe64/cases/p_t60_fos-Stable.sav
+flac3d>model factor-of-safety list
+Last Factor of Safety Calculated: 1.318
+flac3d>program log off
+**********************************************
+* Logging ended at 周五 9月 11 22:24:15 2026
+**********************************************

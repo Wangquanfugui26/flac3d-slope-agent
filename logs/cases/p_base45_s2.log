@@ -1,0 +1,75 @@
+**********************************************
+* Logging started at 周五 9月 11 18:06:23 2026
+* By flac3d Version 7.00 Release 126
+* 
+* 
+* Job Title: Parametric slope case base45
+**********************************************
+flac3d>model factor-of-safety bracket 0.8 3.0 filename "D:/Flac3d/FLAC/exe64/cases/p_base45_fos" ratio-local 1e-5
+--- The following model elements and properties are INCLUDED in factor of safety scaling:
+    zone: cohesion friction joint-cohesion joint-friction
+Factor of Safety Calculation Starting At: 周五 9月 11 18:06:23 2026
+--- Characteristic number of steps = 4566.
+**********************************************
+* Logging started at 周五 9月 11 18:08:26 2026
+* By flac3d Version 7.00 Release 126
+* 
+* 
+* Job Title: Parametric slope case base45
+**********************************************
+flac3d>model factor-of-safety bracket 0.8 3.0 filename "D:/Flac3d/FLAC/exe64/cases/p_base45_fos" ratio-local 1e-5
+--- The following model elements and properties are INCLUDED in factor of safety scaling:
+    zone: cohesion friction joint-cohesion joint-friction
+Factor of Safety Calculation Starting At: 周五 9月 11 18:08:26 2026
+--- Characteristic number of steps = 4566.
+--- Factor of Safety is : 1.69
+--- To see failure mode restore D:/Flac3d/FLAC/exe64/cases/p_base45_fos-Unstable.sav
+--- To see closest stable state restore D:/Flac3d/FLAC/exe64/cases/p_base45_fos-Stable.sav
+flac3d>model factor-of-safety list
+Last Factor of Safety Calculated: 1.685
+flac3d>program log off
+**********************************************
+* Logging ended at 周五 9月 11 18:10:21 2026
+**********************************************
+**********************************************
+* Logging started at 周五 9月 11 20:25:08 2026
+* By flac3d Version 7.00 Release 126
+* 
+* 
+* Job Title: Parametric slope case base45
+**********************************************
+flac3d>model factor-of-safety bracket 0.8 3.0 filename "D:/Flac3d/FLAC/exe64/cases/p_base45_fos" ratio-local 1e-5
+--- The following model elements and properties are INCLUDED in factor of safety scaling:
+    zone: cohesion friction joint-cohesion joint-friction
+Factor of Safety Calculation Starting At: 周五 9月 11 20:25:08 2026
+--- Characteristic number of steps = 4448.
+--- Factor of Safety is : 1.69
+--- To see failure mode restore D:/Flac3d/FLAC/exe64/cases/p_base45_fos-Unstable.sav
+--- To see closest stable state restore D:/Flac3d/FLAC/exe64/cases/p_base45_fos-Stable.sav
+flac3d>model factor-of-safety list
+Last Factor of Safety Calculated: 1.685
+flac3d>program log off
+**********************************************
+* Logging ended at 周五 9月 11 20:31:27 2026
+**********************************************
+**********************************************
+* Logging started at 周五 9月 11 21:27:02 2026
+* By flac3d Version 7.00 Release 126
+* 
+* 
+* Job Title: Parametric slope case base45
+**********************************************
+flac3d>model factor-of-safety bracket 0.8 3.0 filename "D:/Flac3d/FLAC/exe64/cases/p_base45_fos" ratio-local 1e-5
+--- The following model elements and properties are INCLUDED in factor of safety scaling:
+    zone: cohesion friction joint-cohesion joint-friction
+Factor of Safety Calculation Starting At: 周五 9月 11 21:27:02 2026
+--- Characteristic number of steps = 4448.
+--- Factor of Safety is : 1.69
+--- To see failure mode restore D:/Flac3d/FLAC/exe64/cases/p_base45_fos-Unstable.sav
+--- To see closest stable state restore D:/Flac3d/FLAC/exe64/cases/p_base45_fos-Stable.sav
+flac3d>model factor-of-safety list
+Last Factor of Safety Calculated: 1.685
+flac3d>program log off
+**********************************************
+* Logging ended at 周五 9月 11 21:29:46 2026
+**********************************************

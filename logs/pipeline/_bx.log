@@ -1,0 +1,22 @@
+############################################################
+# [c10p15] 重跑 stage2（bracket 0.3~3.0）
+OK c10p15
+  crest=(10.00, 20.00)  c=10 kPa  phi=15 deg
+  [stage2] 596s  FOS=0.75
+    | --- Characteristic number of steps = 5678.
+    | +++ Model is unstable at maximum specified Factor of Safety 0.8.
+    | Factor of Safety Not Valid
+    | --- Characteristic number of steps = 5678.
+    | --- Factor of Safety is : 0.75
+    | --- To see failure mode restore D:/Flac3d/FLAC/exe64/cases/p_c10p15_fos-Unstable.sav
+############################################################
+# [t60] 重跑 stage2（bracket 0.3~3.0）
+OK t60
+  crest=(14.23, 20.00)  c=30 kPa  phi=25 deg
+  [stage2] 172s  FOS=None
+    | --- Characteristic number of steps = 43551.
+    | +++ Model is unstable at maximum specified Factor of Safety 0.8.
+    | Factor of Safety Not Valid
+    | --- Characteristic number of steps = 43551.
+    | +++ Model is unstable at maximum specified Factor of Safety 0.3.
+    | Factor of Safety Not Valid

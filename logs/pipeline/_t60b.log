@@ -1,0 +1,12 @@
+bracket 0.05 ~ 0.40
+  [stage2] 146s
+  FOS=None
+    | --- Characteristic number of steps = 43551.
+    | +++ Model is unstable at maximum specified Factor of Safety 0.8.
+    | Factor of Safety Not Valid
+    | --- Characteristic number of steps = 43551.
+    | +++ Model is unstable at maximum specified Factor of Safety 0.3.
+    | Factor of Safety Not Valid
+    | --- Characteristic number of steps = 43551.
+    | +++ Model is unstable at maximum specified Factor of Safety 0.05.
+    | Factor of Safety Not Valid

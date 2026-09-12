@@ -1,0 +1,93 @@
+**********************************************
+* Logging started at 周五 9月 11 17:18:42 2026
+* By flac3d Version 7.00 Release 126
+* 
+* 
+* Job Title: 3D Slope - Mohr-Coulomb
+**********************************************
+flac3d>
+flac3d>zone create brick point 0 (0,0,0) point 1 (30.0,0,0) point 2 (0,10.0,0) point 3 (0,0,6.0) size 30 10 6 group "lower"
+flac3d>
+flac3d>zone create brick point 0 (0,10.0,0) point 1 (19.0,10.0,0) point 2 (0,11.0,0) point 3 (0,10.0,6.0) size 19 1 6 group "upper"
+flac3d>zone create brick point 0 (0,11.0,0) point 1 (18.0,11.0,0) point 2 (0,12.0,0) point 3 (0,11.0,6.0) size 18 1 6 group "upper"
+flac3d>zone create brick point 0 (0,12.0,0) point 1 (17.0,12.0,0) point 2 (0,13.0,0) point 3 (0,12.0,6.0) size 17 1 6 group "upper"
+flac3d>zone create brick point 0 (0,13.0,0) point 1 (16.0,13.0,0) point 2 (0,14.0,0) point 3 (0,13.0,6.0) size 16 1 6 group "upper"
+flac3d>zone create brick point 0 (0,14.0,0) point 1 (15.0,14.0,0) point 2 (0,15.0,0) point 3 (0,14.0,6.0) size 15 1 6 group "upper"
+flac3d>zone create brick point 0 (0,15.0,0) point 1 (14.0,15.0,0) point 2 (0,16.0,0) point 3 (0,15.0,6.0) size 14 1 6 group "upper"
+flac3d>zone create brick point 0 (0,16.0,0) point 1 (13.0,16.0,0) point 2 (0,17.0,0) point 3 (0,16.0,6.0) size 13 1 6 group "upper"
+flac3d>zone create brick point 0 (0,17.0,0) point 1 (12.0,17.0,0) point 2 (0,18.0,0) point 3 (0,17.0,6.0) size 12 1 6 group "upper"
+flac3d>zone create brick point 0 (0,18.0,0) point 1 (11.0,18.0,0) point 2 (0,19.0,0) point 3 (0,18.0,6.0) size 11 1 6 group "upper"
+flac3d>zone create brick point 0 (0,19.0,0) point 1 (10.0,19.0,0) point 2 (0,20.0,0) point 3 (0,19.0,6.0) size 10 1 6 group "upper"
+flac3d>
+flac3d>zone cmodel assign mohr-coulomb
+flac3d>zone property density 2500.0 bulk 100000000.0 shear 60000000.0 cohesion 30000.0 friction 25.0 tension 10000.0
+--- Property bulk set in 2670 zones using the mohr-coulomb model.
+--- Property shear set in 2670 zones using the mohr-coulomb model.
+--- Property cohesion set in 2670 zones using the mohr-coulomb model.
+--- Property friction set in 2670 zones using the mohr-coulomb model.
+--- Property tension set in 2670 zones using the mohr-coulomb model.
+flac3d>
+flac3d>model gravity 0 -9.81 0
+--- Gravity has been set to: ( 0.000000e+00 -9.810000e+00 0.000000e+00).
+flac3d>zone gridpoint fix velocity-x range position-x 0
+--- Fix velocity-x               specified in 147 gridpoints.
+flac3d>zone gridpoint fix velocity-x range position-x 30.0
+--- Fix velocity-x               specified in 77 gridpoints.
+flac3d>zone gridpoint fix velocity-y range position-y 0
+--- Fix velocity-y      specified in 217 gridpoints.
+flac3d>zone gridpoint fix velocity-z range position-z 0
+--- Fix velocity-z       specified in 496 gridpoints.
+flac3d>zone gridpoint fix velocity-z range position-z 6.0
+--- Fix velocity-z       specified in 496 gridpoints.
+flac3d>
+flac3d>model solve ratio-local 1e-5
+    Cycle      Total    Timestep Ratio-loca       Clock
+--------- ---------- ----------- ---------- ----------- 
+     4751       4751 1.00000e+00 9.6343e-06 00:00:00:09                                  1.0000e-05             
+--- Limit ratio-local of 1.0000e-05 met in process(es): mech Zone Main (9.6343e-06),mech Ball (0.0000e+00),mech Clump (0.0000e+00),mech RBlock (0.0000e+00),mech Struct Main (0.0000e+00),mech BlockMechanical (0.0000e+00).
+--- Cycling ended at: 2026-09-11 17:18:51
+flac3d>
+flac3d>fish define export_g
+Fish>    local L = list
+Fish>    L = list.append(L, 'xc,yc,zc,ux,uy,uz,state,szz,sxy')
+Fish>    loop foreach local zz zone.list
+Fish>        local p = zone.pos(zz)
+Fish>        local ngp = zone.gp.num(zz)
+Fish>        local sdx = 0.0
+Fish>        local sdy = 0.0
+Fish>        local sdz = 0.0
+Fish>        loop local j (1, ngp)
+Fish>            local g = zone.gp(zz, j)
+Fish>            sdx += gp.disp.x(g)
+Fish>            sdy += gp.disp.y(g)
+Fish>            sdz += gp.disp.z(g)
+Fish>        endloop
+Fish>        sdx /= ngp
+Fish>        sdy /= ngp
+Fish>        sdz /= ngp
+Fish>        local st = zone.stress(zz)
+Fish>        local line = string(p->x)
+Fish>        line += ',' + string(p->y)
+Fish>        line += ',' + string(p->z)
+Fish>        line += ',' + string(sdx)
+Fish>        line += ',' + string(sdy)
+Fish>        line += ',' + string(sdz)
+Fish>        line += ',' + string(zone.state(zz))
+Fish>        line += ',' + string(st->yy)
+Fish>        line += ',' + string(st->xy)
+Fish>        L = list.append(L, line)
+Fish>    endloop
+Fish>    file.open("D:/Flac3d/FLAC/exe64/slope_gravity.csv", "write", "text")
+Fish>    file.write(L)
+Fish>    file.close
+Fish>    io.out('### CSV EXPORTED')
+Fish>end
+flac3d>@export_g
+### CSV EXPORTED
+flac3d>
+flac3d>model save "D:/Flac3d/FLAC/exe64/slope_gravity"
+--- Model saved to file D:/Flac3d/FLAC/exe64/slope_gravity.sav.
+flac3d>program log off
+**********************************************
+* Logging ended at 周五 9月 11 17:18:51 2026
+**********************************************

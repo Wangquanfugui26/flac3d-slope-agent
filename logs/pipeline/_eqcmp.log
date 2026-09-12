@@ -1,0 +1,5 @@
+=== 只改坡度，其余完全相同 ===
+  theta=45  37s  步=30000  timestep=30000  ratio=1.00000e+00
+  theta=50  39s  步=30000  timestep=30000  ratio=1.00000e+00
+  theta=55  37s  步=30000  timestep=30000  ratio=1.00000e+00
+  theta=60  38s  步=30000  timestep=30000  ratio=1.00000e+00

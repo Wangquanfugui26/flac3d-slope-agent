@@ -1,0 +1,30 @@
+--------------------------- ------- ---------- ----- ----- ----- ----- -----------
+               Bracketing-3       0 2.2127e-02     9 1.625 1.762 1.900 00:00:02:24
+   A              Operation    Step Ratio-loca Stage Stab. Curr. Unst.       Clock
+--------------------------- ------- ---------- ----- ----- ----- ----- -----------
+               Bracketing-4       0 2.8878e-02    10 1.625 1.762 1.900 00:00:02:41
+   A              Operation    Step Ratio-loca Stage Stab. Curr. Unst.       Clock
+--------------------------- ------- ---------- ----- ----- ----- ----- -----------
+               Bracketing-2       0 6.6948e-03    11 1.625 1.694 1.762 00:00:02:59
+   A              Operation    Step Ratio-loca Stage Stab. Curr. Unst.       Clock
+--------------------------- ------- ---------- ----- ----- ----- ----- -----------
+               Bracketing-3       0 6.5034e-03    12 1.625 1.694 1.762 00:00:03:16
+   A              Operation    Step Ratio-loca Stage Stab. Curr. Unst.       Clock
+--------------------------- ------- ---------- ----- ----- ----- ----- -----------
+                 Bracketing    3505 9.2038e-06    13 1.625 1.659 1.694 00:00:03:30
+   A              Operation    Step Ratio-loca Stage Stab. Curr. Unst.       Clock
+--------------------------- ------- ---------- ----- ----- ----- ----- -----------
+                 Bracketing    3004 9.9107e-06    14 1.659 1.677 1.694 00:00:03:38
+   A              Operation    Step Ratio-loca Stage Stab. Curr. Unst.       Clock
+--------------------------- ------- ---------- ----- ----- ----- ----- -----------
+               Bracketing-2       0 1.7792e-03    15 1.677 1.685 1.694 00:00:03:45
+   A              Operation    Step Ratio-loca Stage Stab. Curr. Unst.       Clock
+--------------------------- ------- ---------- ----- ----- ----- ----- -----------
+               Bracketing-2    1204 9.8604e-06    16 1.677 1.685 1.694 00:00:03:47
+--- Factor of Safety is : 1.69
+--- To see failure mode restore D:/Flac3d/FLAC/exe64/slope_fos-Unstable.sav
+--- To see closest stable state restore D:/Flac3d/FLAC/exe64/slope_fos-Stable.sav
+flac3d>model factor-of-safety list
+Last Factor of Safety Calculated: 1.685
+flac3d>program log off
+flac3d>

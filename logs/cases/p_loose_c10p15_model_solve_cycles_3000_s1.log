@@ -1,0 +1,17 @@
+**********************************************
+* Logging started at 周五 9月 11 21:24:32 2026
+* By flac3d Version 7.00 Release 126
+* 
+* 
+* Job Title: Parametric slope case loose_c10p15
+**********************************************
+flac3d>model solve cycles 3000
+    Cycle      Total    Timestep       Clock
+--------- ---------- ----------- ----------- 
+     3000       3000 1.00000e+00 00:00:00:06      3000                                    
+--- Global cycle limit of 3000 met.
+--- Cycling ended at: 2026-09-11 21:24:38
+flac3d>program log off
+**********************************************
+* Logging ended at 周五 9月 11 21:24:38 2026
+**********************************************

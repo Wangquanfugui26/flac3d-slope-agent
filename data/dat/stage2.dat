@@ -1,0 +1,7 @@
+model restore "D:/Flac3d/FLAC/exe64/slope_gravity"
+model large-strain off
+program log-file "D:/Flac3d/FLAC/exe64/s2.log" truncate
+program log on
+model factor-of-safety bracket 0.8 3.0 filename "D:/Flac3d/FLAC/exe64/slope_fos" ratio-local 1e-5
+model factor-of-safety list
+program log off

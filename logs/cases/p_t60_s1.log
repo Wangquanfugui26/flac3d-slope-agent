@@ -1,0 +1,72 @@
+**********************************************
+* Logging started at 周五 9月 11 20:24:27 2026
+* By flac3d Version 7.00 Release 126
+* 
+* 
+* Job Title: Parametric slope case t60
+**********************************************
+**********************************************
+* Logging started at 周五 9月 11 20:51:32 2026
+* By flac3d Version 7.00 Release 126
+* 
+* 
+* Job Title: Parametric slope case t60
+**********************************************
+**********************************************
+* Logging started at 周五 9月 11 21:32:05 2026
+* By flac3d Version 7.00 Release 126
+* 
+* 
+* Job Title: Parametric slope case t60
+**********************************************
+flac3d>model solve ratio-local 1e-5 cycles 20000
+    Cycle      Total    Timestep Ratio-loca       Clock
+--------- ---------- ----------- ---------- ----------- 
+    20000      20000 1.00000e+00 1.0000e+00 00:00:01:10     20000                        1.0000e-05             
+--- Global cycle limit of 20000 met.
+--- Cycling ended at: 2026-09-11 21:33:15
+flac3d>program log off
+**********************************************
+* Logging ended at 周五 9月 11 21:33:15 2026
+**********************************************
+**********************************************
+* Logging started at 周五 9月 11 22:09:26 2026
+* By flac3d Version 7.00 Release 126
+* 
+* 
+* Job Title: Parametric slope case t60
+**********************************************
+flac3d>model solve ratio-local 1e-5 cycles 20000
+    Cycle      Total    Timestep Ratio-loca       Clock
+--------- ---------- ----------- ---------- ----------- 
+    20000      20000 1.00000e+00 1.0000e+00 00:00:00:24     20000                        1.0000e-05             
+--- Global cycle limit of 20000 met.
+--- Cycling ended at: 2026-09-11 22:09:50
+flac3d>program log off
+**********************************************
+* Logging ended at 周五 9月 11 22:09:50 2026
+**********************************************
+**********************************************
+* Logging started at 周五 9月 11 22:20:15 2026
+* By flac3d Version 7.00 Release 126
+* 
+* 
+* Job Title: Parametric slope case t60
+**********************************************
+**********************************************
+* Logging started at 周五 9月 11 22:22:08 2026
+* By flac3d Version 7.00 Release 126
+* 
+* 
+* Job Title: Parametric slope case t60
+**********************************************
+flac3d>model solve ratio-local 1e-5 cycles 20000
+    Cycle      Total    Timestep Ratio-loca       Clock
+--------- ---------- ----------- ---------- ----------- 
+     4238       4238 1.00000e+00 8.8500e-06 00:00:00:06     20000                        1.0000e-05             
+--- Limit ratio-local of 1.0000e-05 met in process(es): mech Zone Main (8.8500e-06),mech Ball (0.0000e+00),mech Clump (0.0000e+00),mech RBlock (0.0000e+00),mech Struct Main (0.0000e+00),mech BlockMechanical (0.0000e+00).
+--- Cycling ended at: 2026-09-11 22:22:14
+flac3d>program log off
+**********************************************
+* Logging ended at 周五 9月 11 22:22:14 2026
+**********************************************

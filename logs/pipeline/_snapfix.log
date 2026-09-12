@@ -1,0 +1,19 @@
+[stage1] 8s 步=4238 timestep=4238 ratio=1.00000e+00
+    | --- Limit ratio-local of 1.0000e-05 met in process(es): mech Zone Main (8.8500e-06),mech Ball (0.0000e+00),mech Clu
+    | --- Model saved to file D:/Flac3d/FLAC/exe64/cases/p_t60_gravity.sav.
+[stage2] 121s 步=0 timestep=3.8570e-03 ratio=20
+   FOS=1.32
+     | --- Characteristic number of steps = 43551.
+     | +++ Model is unstable at maximum specified Factor of Safety 0.8.
+     | Factor of Safety Not Valid
+     | --- Characteristic number of steps = 43551.
+     | +++ Model is unstable at maximum specified Factor of Safety 0.3.
+     | Factor of Safety Not Valid
+     | --- Characteristic number of steps = 43551.
+     | +++ Model is unstable at maximum specified Factor of Safety 0.05.
+     | Factor of Safety Not Valid
+     | --- Characteristic number of steps = 43623.
+     | +++ Model is unstable at maximum specified Factor of Safety 0.3.
+     | Factor of Safety Not Valid
+     | --- Characteristic number of steps = 5149.
+     | --- Factor of Safety is : 1.32

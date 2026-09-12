@@ -1,0 +1,40 @@
+**********************************************
+* Logging started at 周五 9月 11 21:30:57 2026
+* By flac3d Version 7.00 Release 126
+* 
+* 
+* Job Title: Parametric slope case c10p15
+**********************************************
+flac3d>model factor-of-safety bracket 0.8 3.0 filename "D:/Flac3d/FLAC/exe64/cases/p_c10p15_fos" ratio-local 1e-5
+--- The following model elements and properties are INCLUDED in factor of safety scaling:
+    zone: cohesion friction joint-cohesion joint-friction
+Factor of Safety Calculation Starting At: 周五 9月 11 21:30:57 2026
+--- Characteristic number of steps = 5678.
++++ Model is unstable at maximum specified Factor of Safety 0.8.
+flac3d>model factor-of-safety list
+Factor of Safety Not Valid
+flac3d>program log off
+**********************************************
+* Logging ended at 周五 9月 11 21:32:02 2026
+**********************************************
+**********************************************
+* Logging started at 周五 9月 11 21:42:06 2026
+* By flac3d Version 7.00 Release 126
+* 
+* 
+* Job Title: Parametric slope case c10p15
+**********************************************
+flac3d>model factor-of-safety bracket 0.3 3 filename "D:/Flac3d/FLAC/exe64/cases/p_c10p15_fos" ratio-local 1e-5
+--- The following model elements and properties are INCLUDED in factor of safety scaling:
+    zone: cohesion friction joint-cohesion joint-friction
+Factor of Safety Calculation Starting At: 周五 9月 11 21:42:06 2026
+--- Characteristic number of steps = 5678.
+--- Factor of Safety is : 0.75
+--- To see failure mode restore D:/Flac3d/FLAC/exe64/cases/p_c10p15_fos-Unstable.sav
+--- To see closest stable state restore D:/Flac3d/FLAC/exe64/cases/p_c10p15_fos-Stable.sav
+flac3d>model factor-of-safety list
+Last Factor of Safety Calculated: 0.748
+flac3d>program log off
+**********************************************
+* Logging ended at 周五 9月 11 21:51:59 2026
+**********************************************

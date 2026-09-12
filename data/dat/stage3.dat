@@ -1,0 +1,68 @@
+model restore "D:/Flac3d/FLAC/exe64/slope_fos-Unstable"
+program log-file "D:/Flac3d/FLAC/exe64/s3.log" truncate
+program log on
+fish define export_u
+    local L = list
+    L = list.append(L, 'xc,yc,zc,ux,uy,uz,state,szz,sxy,sxz,syz')
+    loop foreach local zz zone.list
+        local p = zone.pos(zz)
+        local ngp = zone.gp.num(zz)
+        local sdx = 0.0
+        local sdy = 0.0
+        local sdz = 0.0
+        loop local j (1, ngp)
+            local g = zone.gp(zz, j)
+            sdx += gp.disp.x(g)
+            sdy += gp.disp.y(g)
+            sdz += gp.disp.z(g)
+        endloop
+        sdx /= ngp
+        sdy /= ngp
+        sdz /= ngp
+        local st = zone.stress(zz)
+        local row = string(p->x) + ',' + string(p->y) + ',' + string(p->z)
+        row += ',' + string(sdx) + ',' + string(sdy) + ',' + string(sdz)
+        row += ',' + string(zone.state(zz))
+        row += ',' + string(st->yy) + ',' + string(st->xy)
+        row += ',' + string(st->xz) + ',' + string(st->yz)
+        L = list.append(L, row)
+    endloop
+    file.open("D:/Flac3d/FLAC/exe64/slope_failure.csv", "write", "text")
+    file.write(L)
+    file.close
+    io.out('### FAILURE CSV EXPORTED')
+end
+@export_u
+fish define export_s
+    local L = list
+    L = list.append(L, 'xc,yc,zc,ux,uy,uz,state,szz,sxy,sxz,syz')
+    loop foreach local zz zone.list
+        local p = zone.pos(zz)
+        local ngp = zone.gp.num(zz)
+        local sdx = 0.0
+        local sdy = 0.0
+        local sdz = 0.0
+        loop local j (1, ngp)
+            local g = zone.gp(zz, j)
+            sdx += gp.disp.x(g)
+            sdy += gp.disp.y(g)
+            sdz += gp.disp.z(g)
+        endloop
+        sdx /= ngp
+        sdy /= ngp
+        sdz /= ngp
+        local st = zone.stress(zz)
+        local row = string(p->x) + ',' + string(p->y) + ',' + string(p->z)
+        row += ',' + string(sdx) + ',' + string(sdy) + ',' + string(sdz)
+        row += ',' + string(zone.state(zz))
+        row += ',' + string(st->yy) + ',' + string(st->xy)
+        row += ',' + string(st->xz) + ',' + string(st->yz)
+        L = list.append(L, row)
+    endloop
+    file.open("D:/Flac3d/FLAC/exe64/slope_stable.csv", "write", "text")
+    file.write(L)
+    file.close
+    io.out('### STABLE CSV EXPORTED')
+end
+@export_s
+program log off

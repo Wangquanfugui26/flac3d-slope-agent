@@ -1,0 +1,30 @@
+Fish>            sdy += gp.disp.y(g)
+Fish>            sdz += gp.disp.z(g)
+Fish>        endloop
+Fish>        sdx /= ngp
+Fish>        sdy /= ngp
+Fish>        sdz /= ngp
+Fish>        local st = zone.stress(zz)
+Fish>        local line = string(p->x)
+Fish>        line += ',' + string(p->y)
+Fish>        line += ',' + string(p->z)
+Fish>        line += ',' + string(sdx)
+Fish>        line += ',' + string(sdy)
+Fish>        line += ',' + string(sdz)
+Fish>        line += ',' + string(zone.state(zz))
+Fish>        line += ',' + string(st->yy)
+Fish>        line += ',' + string(st->xy)
+Fish>        L = list.append(L, line)
+Fish>    endloop
+Fish>    file.open("D:/Flac3d/FLAC/exe64/slope_gravity.csv", "write", "text")
+Fish>    file.write(L)
+Fish>    file.close
+Fish>    io.out('### CSV EXPORTED')
+Fish>end
+flac3d>@export_g
+### CSV EXPORTED
+flac3d>
+flac3d>model save "D:/Flac3d/FLAC/exe64/slope_gravity"
+--- Model saved to file D:/Flac3d/FLAC/exe64/slope_gravity.sav.
+flac3d>program log off
+flac3d>
